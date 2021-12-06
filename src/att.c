@@ -1,7 +1,7 @@
 /*
  * PSKracker: WPA/WPA2/WPS default key/pin generator written in C.
  *
- * Copyright (c) 2017-2018, soxrok2212 <soxrok2212@gmail.com>
+ * Copyright (c) 2017-2019, soxrok2212 <soxrok2212@gmail.com>
  * SPDX-License-Identifier: GPL-3.0+
  *
  * This program is free software: you can redistribute it and/or modify
@@ -63,10 +63,13 @@ void genpass599(uint32_t x, unsigned char *psk) {
 	static const char CHARSET[] = "abcdefghijkmnpqrstuvwxyz23456789#%+=?";
 	int i;
 
-	uint64_t one = (double) (x * ((1l << 32) + 2));
+	uint64_t key = x;
+	key <<= 32;
+	key += x << 1;
+	key = do_rounding(key);
 	psk[ATT_NVG5XX_PSK_LEN -1] = 0;
 
-	for (i = 1; i < ATT_NVG5XX_PSK_LEN; i++, one /= 37) {
-		psk[ATT_NVG5XX_PSK_LEN - i - 1] = CHARSET[one % 37];
+	for (i = 1; i < ATT_NVG5XX_PSK_LEN; i++, key /= 37) {
+		psk[ATT_NVG5XX_PSK_LEN-1 - i] = CHARSET[key % 37];
 	}
 }

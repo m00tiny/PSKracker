@@ -185,39 +185,39 @@
 
   - `?d?d?d?d?d?d?d?d`
 
-* MyCharterWiFi-XX	-	[Adjective + Noun + 1 or 3 Digits]	-	Len:Varies
+* MyCharterWiFi-XX	-	[word + word + 1 or 3 Digits]	-	Len:Varies
 
-  - `-a 6 netgear.txt ?d?d?d`
-
-  or  
-
-  - `-a 6 netgear.txt ?d`
-
-    * Dictionaries are located [here](/dicts/netgear)
-
-* MySpectrumWiFi-XX	-	[Adjective + Noun + 1 or 3 Digits]	-	Len:Varies
-
-  - `-a 6 netgear.txt ?d?d?d`  
+  - `-a 6 netgear-spectrum.txt ?d?d?d`
 
   or  
 
-  - `-a 6 netgear.txt ?d`
+  - `-a 6 netgear-spectrum.txt ?d`
 
-    * Dictionaries are located [here](/dicts/netgear)
+    * Dictionaries are located [here](/dicts/netgear-spectrum)
+
+* MySpectrumWiFi-XX	-	[word + word + 1 or 3 Digits]	-	Len:Varies
+
+  - `-a 6 netgear-spectrum.txt ?d?d?d`  
+
+  or  
+
+  - `-a 6 netgear-spectrum.txt ?d`
+
+    * Dictionaries are located [here](/dicts/netgear-spectrum)
 
 * MYWIFI (EE)	-	[MYWIFI + 4 numbers]	-	Len: 10
 
   - `MYWIFI?d?d?d?d`
 
-* NETGEARXX	-	[Adjective + Noun + 3 Digits]	-	Len: Varies
+* NETGEARXX	-	[word + word + 3 Digits]	-	Len: Varies
 
-  - `-a 6 netgear.txt ?d?d?d`  
+  - `-a 6 netgear-spectrum.txt ?d?d?d`  
 
   or  
 
-  - `-a 6 netgear.txt ?d`  
+  - `-a 6 netgear-spectrum.txt ?d`  
 
-    * Dictionaries are located [here](/dicts/netgear)
+    * Dictionaries are located [here](/dicts/netgear-spectrum)
 
 * Netia-XXXXXX	-	[0-9a-f]	-	Len:13
 
@@ -268,6 +268,8 @@
 
   - `-1 BCDFLMNPQRSTVWXY ?1?1?1?1?1?1?1?1?1X`
 
+[CyberChef Recipe](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')To_Hex('Space',0)Take_bytes(0,1,false)Find_/_Replace(%7B'option':'Simple%20string','string':'0'%7D,'P',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'1'%7D,'Q',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'2'%7D,'R',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'3'%7D,'S',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'4'%7D,'T',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'5'%7D,'N',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'6'%7D,'V',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'7'%7D,'W',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'8'%7D,'X',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'9'%7D,'Y',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'A'%7D,'L',true,true,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'E'%7D,'M',true,true,true,false)To_Upper_case('All')&input=U0tZWFhYWFg) to determine the below from the SSID.
+
   First hex value in SSID -> Last letter of PSK, X:
 
   0 = P
@@ -305,6 +307,16 @@
 * SmartRG	-	[0-9a-f]	-	Len: 10
 
   - `?h?h?h?h?h?h?h?h?h?h`
+
+* SpectrumSetup-XX	-	[word + word + 1 or 3 Digits]	-	Len:Varies
+
+  - `-a 6 netgear-spectrum.txt ?d?d?d`  
+
+  or  
+
+  - `-a 6 netgear-spectrum.txt ?d`
+
+    * Dictionaries are located [here](/dicts/netgear-spectrum)
 
 * SpeedTouchXXXXXX	-	[0-9a-f]	-	Len: 10
 
