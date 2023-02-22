@@ -5,6 +5,7 @@ acre
 adorable
 advice
 affair
+agent
 agency
 airplane
 album
@@ -70,6 +71,7 @@ bug
 bunny
 bus
 bush
+busy
 butler
 butter
 buyer
@@ -110,6 +112,7 @@ clumsy
 coast
 coat
 coconut
+coffee
 cold
 comet
 complete
@@ -155,11 +158,13 @@ down
 dusty
 duty
 dynamic
+each
 eager
 eagle
 earth
 east
 easy
+editor
 effort
 eggplant
 eight
@@ -169,6 +174,7 @@ elephant
 eleven
 emerald
 emigrant
+empty
 energy
 engine
 enough
@@ -367,6 +373,7 @@ monkey
 month
 monthly
 moon
+most
 motorcycle
 mountain
 movie
@@ -394,6 +401,7 @@ occur
 ocean
 octopus
 odd
+office
 oil
 old
 olive
@@ -404,6 +412,7 @@ orange
 orchestra
 ordinary
 outlet
+over
 owl
 owner
 oxygen
@@ -414,6 +423,7 @@ pant
 paper
 parade
 park
+past`
 pastel
 path
 patron
@@ -444,6 +454,7 @@ poem
 poet
 poetry
 point
+policy
 polite
 pond
 poodle
@@ -512,6 +523,7 @@ scaly
 scary
 scout
 sea
+sector
 seed
 self
 series
@@ -531,6 +543,7 @@ silent
 silky
 silly
 silver
+singer
 sitter
 six
 skates
@@ -601,6 +614,7 @@ ten
 tent
 terrain
 terrific
+thanks
 that
 theory
 think
@@ -619,6 +633,7 @@ tomato
 tooth
 top
 topic
+total
 town
 toy
 trail
